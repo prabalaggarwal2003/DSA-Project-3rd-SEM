@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS PROJECT</title>
+</head>
+<style>
+
+    .photo {
+        display: inline-block;
+    }
+
+    img{
+        border-style: solid;
+        text-align: center;
+    }
+
+    body{
+        background-color: rgb(255, 212, 131);
+        margin: 20px;
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: red;
+        font-size: 40px;
+    }
+
+    ol {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+
+    header{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: solid 2px black;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
+</style>
+
+<body>
+    <header>
+        <h2>
+            Prabal Aggarwal, CSE-A, 02020802722, 3rd Semester, DS PROJECT
+        </h2>
+    </header>
+    <br>
+    <br>
+    <h1> Deleting the last node in a Linked List </h1>
+
+    <br>
+    <br>
+
+    <div class="photo">
+        <img src="https://allcprogrammingandalgorithm.files.wordpress.com/2019/05/screenshot_2019-05-23-rema-thareja-pdf8.png" alt="haa">
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="photo">
+        <ol>
+            <li>START</li>
+            <br>
+            <li>IF HEAD = NULL
+                <br>
+                Write <em>UNDERFLOW</em>
+                <br>
+                Go to Step 9 
+                <br>
+                [END OF IF] 
+                <br>
+                <pre>//If the first node is null or there is only one node, then they return null.</pre>
+            </li>
+            <br>
+            <li>
+                SET PTR = HEAD 
+                <pre>//ptr will point to head node.</pre>
+            </li>
+            <br>
+            <li>
+                Repeat Steps 5 and 6 while PTR -> NEXT!= NULL 
+                
+                <pre>//traversing two pointers, preptr to 2nd last
+node and ptr to last node.</pre>
+            </li>
+            <br>
+            <li>
+                SET PREPTR = PTR
+            </li>
+            <br>
+            <li>
+                SET PTR = PTR -> NEXT 
+                <br>
+                END OF LOOP 
+                <br>
+                <pre>//exiting step 5 and 6.</pre>
+            </li>
+            <br>
+            <li>
+                SET PREPTR -> NEXT = NULL 
+                <br>
+                <pre>//deleting the last node by pointing the second last node to NULL.</pre>
+            </li>
+            <br>
+            <li>
+                <em>FREE</em> PTR 
+                <br>
+                <pre>//deallocating the memory of last node.</pre>
+            </li>
+            <br>
+            <li>
+                EXIT
+            </li>
+        </ol>
+    </div>
+   
+</body>
+</html>
